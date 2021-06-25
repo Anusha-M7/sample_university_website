@@ -8,29 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
 
 <body>
-    <section class="banner">
+    <section class=" banner ">
         <nav>
-            <a href="index.html">
-                <img src="/eduford_img/logo.png">
-                <div class="nav-links">
+            <a href="index.html ">
+                <img src="/eduford_img/logo.png ">
+                <div class="nav-links " id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">COURSE</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href=" ">HOME</a></li>
+                        <li><a href=" ">ABOUT</a></li>
+                        <li><a href=" ">COURSE</a></li>
+                        <li><a href=" ">BLOG</a></li>
+                        <li><a href=" ">CONTACT</a></li>
                     </ul>
                 </div>
-            </a>
+                <i class="fas fa-bars" onclick="showmenu()"></i>
         </nav>
-        <div class="text-box">
+        <div class="text-box ">
             <h1>World's Biggest University</h1>
-            <p>Education is a commitment to excellence in Teaching and Learning.Education is about preparing students for college and beyond.Education is about creating leaders for tomorrow</p>
+            <p>Education is a commitment to excellence in Teaching and Learning.
+                <br/>Education is about preparing students for college and beyond.
+                <br/>Education is about creating leaders for tomorrow.</p>
+            <a href=" " class="hero-button ">Visit us to know more</a>
         </div>
     </section>
-</body>
+    <script>
+        var navLinks = document.getElementById("navLinks");
 
-</html>
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+    </script>
+</body>
+< /html>
